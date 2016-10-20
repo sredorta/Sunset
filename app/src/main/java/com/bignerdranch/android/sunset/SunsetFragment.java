@@ -59,12 +59,12 @@ public class SunsetFragment extends Fragment {
         heightAnimator.setInterpolator(new AccelerateInterpolator());
 
         //Change sky colors for sunset
-        ObjectAnimator sunsetSkyAnimator = ObjectAnimator.ofInt(mSkyView,"backgroundColor",mBlueSkyColor,mSunsetSkyColor).setDuration(1500);
+        ObjectAnimator sunsetSkyAnimator = ObjectAnimator.ofInt(mSkyView,"backgroundColor",mBlueSkyColor,mSunsetSkyColor).setDuration(2500);
         //sunsetSkyAnimator.setInterpolator(new AccelerateInterpolator());
         sunsetSkyAnimator.setEvaluator(new ArgbEvaluator());
 
         //Sky colors to night
-        ObjectAnimator nightSkyAnimator = ObjectAnimator.ofInt(mSkyView,"backgroundColor",mSunsetSkyColor,mNightSkyColor).setDuration(1500);
+        ObjectAnimator nightSkyAnimator = ObjectAnimator.ofInt(mSkyView,"backgroundColor",mSunsetSkyColor,mNightSkyColor).setDuration(500);
         nightSkyAnimator.setEvaluator(new ArgbEvaluator());
 
         AnimatorSet animatorSet = new AnimatorSet();
